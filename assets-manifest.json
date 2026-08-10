@@ -1,0 +1,54 @@
+{
+  "brand": {
+    "logo": "/brand/logo.png",
+    "headerHeightPx": "34-42",
+    "note": "Logo icon only; render brand name as HTML text for clarity."
+  },
+  "home": {
+    "background": "/home/background.png",
+    "glow": "/home/seoul-glow.png",
+    "sparkles": "/home/neon-sparkles.png",
+    "covers": {
+      "soundRush": "/game-covers/sound-battle.png",
+      "seoulMetro": "/game-covers/seoul-metro.png",
+      "soundBattle": "/game-covers/sound-attack.png"
+    }
+  },
+  "soundRush": {
+    "background": "/sound-rush/background.png",
+    "track": "/sound-rush/track.png",
+    "dynamicUI": "CSS/HTML"
+  },
+  "seoulMetro": {
+    "background": "/seoul-metro/background.png",
+    "metroMap": "/seoul-metro/metro-map.png",
+    "stationSign": "/seoul-metro/station-sign.png",
+    "routes": [
+      "/seoul-metro/route-left.png",
+      "/seoul-metro/route-center.png",
+      "/seoul-metro/route-right.png"
+    ],
+    "correct": "/seoul-metro/correct.png",
+    "wrong": "/seoul-metro/wrong.png",
+    "dynamicTrain": "CSS/SVG or background motion"
+  },
+  "soundBattle": {
+    "background": "/sound-battle/background.png",
+    "special": "/sound-battle/special.png",
+    "effects": [
+      "/sound-battle/sound-wave.png",
+      "/sound-battle/lightning.png",
+      "/sound-battle/explosion.png",
+      "/sound-battle/hit.png"
+    ],
+    "dynamicUI": "Runes, enemy cards, combo/hearts/energy/boss HP must be CSS/HTML so Hangul remains dynamic."
+  },
+  "music": {
+    "home": "/music/home.mp3",
+    "sound-rush": "/music/sound-rush.mp3",
+    "seoul-metro": "/music/seoul-metro.mp3",
+    "sound-battle": "/music/sound-battle.mp3",
+    "boss": "/music/boss.mp3"
+  },
+  "pronunciation": "Files are not yet present. Use src/data/pronunciation_audio_manifest.json and fallback ko-KR SpeechSynthesis in development only."
+}
