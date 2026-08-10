@@ -212,3 +212,22 @@ header{height:68px;border:0;background:transparent;backdrop-filter:none}.home he
   transform:scale(.72) !important;
   pointer-events:none;
 }
+/* Hide wrong Metro routes after a correct answer */
+
+.metro-route{
+  transition:
+    opacity .4s ease,
+    filter .4s ease,
+    transform .4s ease;
+}
+
+.metro-route.route-hidden{
+  opacity:0 !important;
+  filter:blur(4px) brightness(.45) !important;
+  transform:scale(.78) !important;
+  pointer-events:none;
+}
+
+.metro-route.selected{
+  z-index:5;
+}
