@@ -419,3 +419,101 @@ body:has(.game-3){
     top:38%;
   }
 }
+/* First + third game: fit exactly inside the screen */
+
+.game-1,
+.game-3{
+  height:100vh !important;
+  height:100dvh !important;
+  min-height:0 !important;
+  max-height:100dvh !important;
+
+  display:flex;
+  flex-direction:column;
+
+  overflow:hidden !important;
+}
+
+.game-1 > header,
+.game-3 > header{
+  flex:0 0 auto;
+}
+
+.game-1 > .progress,
+.game-3 > .progress{
+  flex:0 0 3px;
+}
+
+.game-1 > .hud,
+.game-3 > .hud{
+  flex:0 0 auto;
+}
+
+.game-1 > .arena,
+.game-3 > .arena{
+  flex:1 1 auto;
+
+  width:100%;
+  height:auto !important;
+  min-height:0 !important;
+
+  margin:0 auto;
+  overflow:hidden;
+}
+
+body:has(.game-1),
+body:has(.game-3){
+  overflow:hidden;
+}
+@media(max-height:700px){
+
+  .game-1 .hud,
+  .game-3 .hud{
+    height:58px;
+    padding-top:6px;
+    padding-bottom:6px;
+  }
+
+  /* ПЕРВАЯ ИГРА */
+
+  .game-1 .track{
+    top:20%;
+    height:150px;
+  }
+
+  .game-1 .runes{
+    bottom:10px;
+  }
+
+  .game-1 .runes button{
+    height:60px;
+  }
+
+  .game-1 .runner{
+    top:35px;
+    padding:9px 17px;
+  }
+
+  .game-1 .runner b{
+    font-size:22px;
+  }
+
+
+  /* ТРЕТЬЯ ИГРА */
+
+  .game-3 .enemy{
+    top:5%;
+  }
+
+  .game-3 .battle-runes{
+    bottom:10px;
+  }
+
+  .game-3 .battle-runes button{
+    height:60px;
+  }
+
+  .game-3 .battle-collection{
+    top:27%;
+  }
+}
