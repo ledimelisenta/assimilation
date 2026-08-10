@@ -15,10 +15,12 @@ type RoundAnswer={id:string;original:string;context?:string;target?:string;userA
 type Result={score:number;accuracy:number;combo:number;mistakes:Record<string,number>;answers?:RoundAnswer[]};
 export function getPlayerStatus(accuracy:number){if(accuracy<=40)return{label:'Юный 학생',tone:'young'};if(accuracy<=65)return{label:'Уверенный 학생',tone:'confident'};if(accuracy<=94)return{label:'학생-мастер',tone:'master'};return{label:'한글-профи',tone:'pro'} as const}
 const games=content.games as unknown as GameData[];
+const asset = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
 const gameMeta=[
-  {slug:'sound-rush',title:'Битва звуков',label:'РИТМ · РЕАКЦИЯ',cover:'/game-covers/sound-battle.png',key:'soundRush'},
-  {slug:'seoul-metro',title:'Метро Сеула',label:'МАРШРУТЫ · РЕАКЦИЯ',cover:'/game-covers/seoul-metro.png',key:'seoulMetro'},
-  {slug:'sound-battle',title:'Звуковая атака',label:'АРКАДА · РЕАКЦИЯ',cover:'/game-covers/sound-attack.png',key:'soundBattle'}
+ {slug:'sound-rush',title:'Битва звуков',label:'РИТМ · РЕАКЦИЯ',cover:asset('game-covers/sound-battle.png'),key:'soundRush'},
+{slug:'seoul-metro',title:'Метро Сеула',label:'МАРШРУТЫ · РЕАКЦИЯ',cover:asset('game-covers/seoul-metro.png'),key:'seoulMetro'},
+{slug:'sound-battle',title:'Звуковая атака',label:'АРКАДА · РЕАКЦИЯ',cover:asset('game-covers/sound-attack.png'),key:'soundBattle'}
 ] as const;
 const ruDiff:Record<Difficulty,string>={easy:'Легкий',normal:'Средний',hard:'Сложный'};
 const gameGuides=[
@@ -61,7 +63,7 @@ function AudioProvider({children}:{children:React.ReactNode}){
   return <AudioContext.Provider value={{muted,toggle,playSfx,speak,bossMode}}>{children}</AudioContext.Provider>
 }
 
-function Header({home=false,game=false}:{home?:boolean;game?:boolean}){const {muted,toggle}=useContext(AudioContext);return <header className={`${home?'home-header ':''}${game?'game-header':''}`}><Link to="/" className="brand"><img src="/brand/logo.png" alt=""/><span>Корейский словарик</span></Link>{home&&<div className="header-title"><span className="header-title-ko">한글</span><span className="header-title-ru">: Ассимиляция</span></div>}<button className="sound" onClick={toggle} aria-label="Переключить звук">{muted?'🔇':'🔊'}</button></header>}
+function Header({home=false,game=false}:{home?:boolean;game?:boolean}){const {muted,toggle}=useContext(AudioContext);return <header className={`${home?'home-header ':''}${game?'game-header':''}`}><Link to="/" className="brand"><img src={asset('brand/logo.png')} alt=""/><span>Корейский словарик</span></Link>{home&&<div className="header-title"><span className="header-title-ko">한글</span><span className="header-title-ru">: Ассимиляция</span></div>}<button className="sound" onClick={toggle} aria-label="Переключить звук">{muted?'🔇':'🔊'}</button></header>}
 function Home(){return <main className="home"><Header home/><section id="games" className="cards">{games.map((g,i)=><article className={`game-card c${i+1}`} key={g.id} aria-label={gameMeta[i].title} style={{backgroundImage:`url("${gameMeta[i].cover}")`}}><div className="card-body"><div className="card-foot"><span>Рекорд <b>{bestFor(i+1)}</b></span><Link to={`/${gameMeta[i].slug}`} className="play">Играть <b>→</b></Link></div></div></article>)}</section></main>}
 function bestFor(id:number){return Math.max(0,...(['easy','normal','hard'] as Difficulty[]).map(d=>readStore<Result>(`ks-result-${id}-${d}`,{score:0,accuracy:0,combo:0,mistakes:{}}).score)).toLocaleString('ru-RU')}
 
