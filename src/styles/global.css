@@ -149,3 +149,53 @@ header{height:68px;border:0;background:transparent;backdrop-filter:none}.home he
 /* Reading rules modal: one flow layout and no duplicated opener above the dialog. */
 .rules-trigger[aria-expanded=true]{visibility:hidden;pointer-events:none}.reading-rules-modal{height:auto;max-height:calc(100vh - 40px);overflow-y:auto}.reading-rules-content{display:flex;flex-direction:column;align-items:center;width:100%}.reading-rules-content>p{width:100%}.reading-rules-actions{width:100%;margin-top:18px;display:flex;justify-content:center;align-items:center}.reading-rules-actions .reading-rules-level{position:static;width:fit-content;min-width:180px;min-height:0;margin:0;padding:10px 22px;transform:none;border-radius:11px;background:linear-gradient(105deg,#ff667d,#ce4db8 48%,#42dfea);box-shadow:0 0 18px #ed55a936,0 0 15px #43dce52b}.reading-rules-actions .reading-rules-level:hover,.reading-rules-actions .reading-rules-level:focus-visible{transform:none}
 @media(max-width:760px){.reading-rules-modal{max-height:calc(100vh - 18px)}.reading-rules-actions{margin-top:13px}.reading-rules-actions .reading-rules-level{min-width:170px;padding:9px 18px}}
+/* VIDEO BACKGROUND FOR SEOUL METRO */
+
+.metro-camera{
+  inset:0!important;
+  transform:none!important;
+  animation:none!important;
+  overflow:hidden;
+}
+
+.metro-video{
+  position:absolute;
+  z-index:0;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+  background:#030713;
+}
+
+.metro-video-shade{
+  position:absolute;
+  z-index:1;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(3,7,19,.28) 0%,
+      transparent 32%,
+      transparent 70%,
+      rgba(3,7,19,.22) 100%
+    );
+}
+
+.metro-speed-lines,
+.metro-track-glow{
+  z-index:2;
+}
+
+.metro-junction{
+  z-index:3;
+}
+
+.metro-correct .metro-camera,
+.metro-wrong .metro-camera{
+  transform:none!important;
+  animation:none!important;
+}
