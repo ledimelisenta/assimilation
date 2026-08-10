@@ -1,0 +1,7 @@
+export type MetroOptionWord={written:string;reading:string};
+
+const changeFirstAssimilatedFinal=(word:MetroOptionWord,finalIndex:number)=>{const {written,reading}=word;for(let i=0;i<Math.min(written.length,reading.length);i++){const code=reading.charCodeAt(i)-0xac00;if(written[i]!==reading[i]&&code>=0&&code<=11171)return reading.slice(0,i)+String.fromCharCode(0xac00+Math.floor(code/28)*28+finalIndex)+reading.slice(i+1)}return written};
+
+export function validateMetroOptions(options:string[],correctAnswer:string){return options.length===3&&new Set(options).size===3&&options.includes(correctAnswer)&&options.filter(option=>option===correctAnswer).length===1}
+
+export function buildMetroOptions(word:MetroOptionWord,pool:MetroOptionWord[],random:()=>number=Math.random){const correctAnswer=word.reading;const candidates=[word.written,changeFirstAssimilatedFinal(word,7),changeFirstAssimilatedFinal(word,20),...pool.flatMap(item=>[item.reading,item.written])];const distractors=Array.from(new Set(candidates)).filter(option=>option&&option!==correctAnswer).slice(0,2);if(distractors.length!==2)throw new Error(`Недостаточно вариантов для ${word.written}`);for(let attempt=0;attempt<8;attempt++){const correctIndex=Math.min(2,Math.floor(random()*3));const options=[...distractors];options.splice(correctIndex,0,correctAnswer);if(validateMetroOptions(options,correctAnswer))return options}throw new Error(`Некорректные маршруты для ${word.written}`)}

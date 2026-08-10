@@ -1,0 +1,32 @@
+{
+  "home": {
+    "file": "/music/home.mp3",
+    "loop": true,
+    "fadeMs": 650
+  },
+  "soundRush": {
+    "file": "/music/sound-rush.mp3",
+    "loop": true,
+    "fadeMs": 450
+  },
+  "seoulMetro": {
+    "file": "/music/seoul-metro.mp3",
+    "loop": true,
+    "fadeMs": 550
+  },
+  "soundBattle": {
+    "file": "/music/sound-battle.mp3",
+    "loop": true,
+    "fadeMs": 450
+  },
+  "boss": {
+    "file": "/music/boss.mp3",
+    "loop": true,
+    "fadeMs": 250
+  },
+  "ducking": {
+    "whenPronunciationPlaysDb": -8,
+    "attackMs": 80,
+    "releaseMs": 220
+  }
+}

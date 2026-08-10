@@ -1,0 +1,1191 @@
+{
+  "meta": {
+    "project": "Корейский словарик",
+    "level": "A1–A2",
+    "readingDisplay": "hangul_only",
+    "note": "Не использовать русскую транскрипцию или романизацию."
+  },
+  "games": [
+    {
+      "id": 1,
+      "title": "ㅂ SOUND RUSH",
+      "patterns": [
+        "ㅂ+ㄴ",
+        "ㅂ+ㅁ",
+        "ㅂ+ㄹ"
+      ],
+      "ruleOutput": {
+        "ㅂ+ㄴ": "ㅁ+ㄴ",
+        "ㅂ+ㅁ": "ㅁ+ㅁ",
+        "ㅂ+ㄹ": "ㅁ+ㄴ"
+      },
+      "levels": {
+        "easy": [
+          {
+            "id": "g1_e_001",
+            "written": "십년",
+            "reading": "심년",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_e_001.mp3",
+            "note": ""
+          },
+          {
+            "id": "g1_e_002",
+            "written": "덮는",
+            "reading": "덤는",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅍ",
+            "audio": "g1_e_002.mp3",
+            "note": ""
+          },
+          {
+            "id": "g1_e_003",
+            "written": "아홉 명",
+            "reading": "아홈명",
+            "pattern": "ㅂ+ㅁ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_e_003.mp3",
+            "note": "단어 경계"
+          },
+          {
+            "id": "g1_e_004",
+            "written": "앞문",
+            "reading": "암문",
+            "pattern": "ㅂ+ㅁ",
+            "orthographicFinal": "ㅍ",
+            "audio": "g1_e_004.mp3",
+            "note": ""
+          },
+          {
+            "id": "g1_e_005",
+            "written": "감사합니다",
+            "reading": "감사함니다",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_e_005.mp3",
+            "note": "어미 -ㅂ니다"
+          },
+          {
+            "id": "g1_e_006",
+            "written": "덥네요",
+            "reading": "덤네요",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_e_006.mp3",
+            "note": ""
+          },
+          {
+            "id": "g1_e_007",
+            "written": "없는",
+            "reading": "엄는",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅄ",
+            "audio": "g1_e_007.mp3",
+            "note": "겹받침"
+          },
+          {
+            "id": "g1_e_008",
+            "written": "겁나요",
+            "reading": "검나요",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_e_008.mp3",
+            "note": ""
+          },
+          {
+            "id": "g1_e_009",
+            "written": "십만",
+            "reading": "심만",
+            "pattern": "ㅂ+ㅁ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_e_009.mp3",
+            "note": ""
+          },
+          {
+            "id": "g1_e_010",
+            "written": "일곱 마리",
+            "reading": "일곰마리",
+            "pattern": "ㅂ+ㅁ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_e_010.mp3",
+            "note": "단어 경계"
+          },
+          {
+            "id": "g1_e_011",
+            "written": "앞머리",
+            "reading": "암머리",
+            "pattern": "ㅂ+ㅁ",
+            "orthographicFinal": "ㅍ",
+            "audio": "g1_e_011.mp3",
+            "note": ""
+          },
+          {
+            "id": "g1_e_012",
+            "written": "업무",
+            "reading": "엄무",
+            "pattern": "ㅂ+ㅁ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_e_012.mp3",
+            "note": ""
+          },
+          {
+            "id": "g1_e_013",
+            "written": "십만 원",
+            "reading": "심만 원",
+            "pattern": "ㅂ+ㅁ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_e_013.mp3",
+            "note": "수 표현"
+          },
+          {
+            "id": "g1_e_014",
+            "written": "취합니다",
+            "reading": "취함니다",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_e_014.mp3",
+            "note": "어미 -ㅂ니다"
+          },
+          {
+            "id": "g1_e_015",
+            "written": "없네요",
+            "reading": "엄네요",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅄ",
+            "audio": "g1_e_015.mp3",
+            "note": "겹받침"
+          },
+          {
+            "id": "g1_e_016",
+            "written": "김밥만",
+            "reading": "김밤만",
+            "pattern": "ㅂ+ㅁ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_e_016.mp3",
+            "note": "조사 -만"
+          }
+        ],
+        "normal": [
+          {
+            "id": "g1_n_001",
+            "written": "밟는다",
+            "reading": "밤는다",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㄼ",
+            "audio": "g1_n_001.mp3",
+            "note": "겹받침"
+          },
+          {
+            "id": "g1_n_002",
+            "written": "읊네",
+            "reading": "음네",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㄿ",
+            "audio": "g1_n_002.mp3",
+            "note": "겹받침"
+          },
+          {
+            "id": "g1_n_003",
+            "written": "없나요",
+            "reading": "엄나요",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅄ",
+            "audio": "g1_n_003.mp3",
+            "note": "겹받침"
+          },
+          {
+            "id": "g1_n_004",
+            "written": "높네요",
+            "reading": "놈네요",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅍ",
+            "audio": "g1_n_004.mp3",
+            "note": ""
+          },
+          {
+            "id": "g1_n_005",
+            "written": "소꿉놀이",
+            "reading": "소꿈노리",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_n_005.mp3",
+            "note": "복합어"
+          },
+          {
+            "id": "g1_n_006",
+            "written": "이팝나무",
+            "reading": "이팜나무",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_n_006.mp3",
+            "note": "복합어"
+          },
+          {
+            "id": "g1_n_007",
+            "written": "옆모습",
+            "reading": "염모습",
+            "pattern": "ㅂ+ㅁ",
+            "orthographicFinal": "ㅍ",
+            "audio": "g1_n_007.mp3",
+            "note": ""
+          },
+          {
+            "id": "g1_n_008",
+            "written": "값만",
+            "reading": "감만",
+            "pattern": "ㅂ+ㅁ",
+            "orthographicFinal": "ㅄ",
+            "audio": "g1_n_008.mp3",
+            "note": "겹받침"
+          },
+          {
+            "id": "g1_n_009",
+            "written": "수입 내역",
+            "reading": "수임 내역",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_n_009.mp3",
+            "note": "단어 경계"
+          },
+          {
+            "id": "g1_n_010",
+            "written": "입맛",
+            "reading": "임맏",
+            "pattern": "ㅂ+ㅁ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_n_010.mp3",
+            "note": "뒤 음절 받침의 끝소리 규칙도 함께 나타남"
+          },
+          {
+            "id": "g1_n_011",
+            "written": "바지랍니다",
+            "reading": "바지람니다",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_n_011.mp3",
+            "note": "어미 내부"
+          },
+          {
+            "id": "g1_n_012",
+            "written": "학생입니다",
+            "reading": "학생임니다",
+            "pattern": "ㅂ+ㄴ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_n_012.mp3",
+            "note": "입니다"
+          }
+        ],
+        "hard": [
+          {
+            "id": "g1_h_001",
+            "written": "협력",
+            "reading": "혐녁",
+            "pattern": "ㅂ+ㄹ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_h_001.mp3",
+            "note": "상호 비음 동화"
+          },
+          {
+            "id": "g1_h_002",
+            "written": "십리",
+            "reading": "심니",
+            "pattern": "ㅂ+ㄹ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_h_002.mp3",
+            "note": "상호 비음 동화"
+          },
+          {
+            "id": "g1_h_003",
+            "written": "섭리",
+            "reading": "섬니",
+            "pattern": "ㅂ+ㄹ",
+            "orthographicFinal": "ㅂ",
+            "audio": "g1_h_003.mp3",
+            "note": "상호 비음 동화"
+          }
+        ]
+      },
+      "sentenceChallenges": [
+        {
+          "id": "s01",
+          "text": "10년 동안 한국말을 공부했어요.",
+          "audio": "s01.mp3",
+          "targets": [
+            {
+              "written": "10년",
+              "reading": "심년",
+              "pattern": "ㅂ+ㄴ"
+            }
+          ]
+        },
+        {
+          "id": "s03",
+          "text": "이건 90년대에 유행하던 바지랍니다.",
+          "audio": "s03.mp3",
+          "targets": [
+            {
+              "written": "바지랍니다",
+              "reading": "바지람니다",
+              "pattern": "ㅂ+ㄴ"
+            }
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "십만 원을 봉투에 넣는다.",
+          "audio": "s05.mp3",
+          "targets": [
+            {
+              "written": "십만",
+              "reading": "심만",
+              "pattern": "ㅂ+ㅁ"
+            }
+          ]
+        },
+        {
+          "id": "s07",
+          "text": "그 사람이 저한테 입맛 없네요.",
+          "audio": "s07.mp3",
+          "targets": [
+            {
+              "written": "입맛",
+              "reading": "임맏",
+              "pattern": "ㅂ+ㅁ"
+            },
+            {
+              "written": "없네요",
+              "reading": "엄네요",
+              "pattern": "ㅂ+ㄴ"
+            }
+          ]
+        },
+        {
+          "id": "s08",
+          "text": "앞문으로 아홉 명이 나갔어요.",
+          "audio": "s08.mp3",
+          "targets": [
+            {
+              "written": "앞문",
+              "reading": "암문",
+              "pattern": "ㅂ+ㅁ"
+            },
+            {
+              "written": "아홉 명이",
+              "reading": "아홈명이",
+              "pattern": "ㅂ+ㅁ"
+            }
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "참치 김밥만 못 먹어요.",
+          "audio": "s09.mp3",
+          "targets": [
+            {
+              "written": "김밥만",
+              "reading": "김밤만",
+              "pattern": "ㅂ+ㅁ"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "중국말을 공부하는 2학년 학생입니다.",
+          "audio": "s10.mp3",
+          "targets": [
+            {
+              "written": "학생입니다",
+              "reading": "학생임니다",
+              "pattern": "ㅂ+ㄴ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "ㄷ SEOUL METRO",
+      "patterns": [
+        "ㄷ+ㄴ",
+        "ㄷ+ㅁ",
+        "ㄷ+ㄹ"
+      ],
+      "ruleOutput": {
+        "ㄷ+ㄴ": "ㄴ+ㄴ",
+        "ㄷ+ㅁ": "ㄴ+ㅁ",
+        "ㄷ+ㄹ": "ㄴ+ㄴ"
+      },
+      "levels": {
+        "easy": [
+          {
+            "id": "g2_e_001",
+            "written": "듣네",
+            "reading": "든네",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㄷ",
+            "audio": "g2_e_001.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_e_002",
+            "written": "젖는",
+            "reading": "전는",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅈ",
+            "audio": "g2_e_002.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_e_003",
+            "written": "있나요",
+            "reading": "인나요",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅆ",
+            "audio": "g2_e_003.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_e_004",
+            "written": "끝나고",
+            "reading": "끈나고",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅌ",
+            "audio": "g2_e_004.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_e_005",
+            "written": "다섯 명",
+            "reading": "다선명",
+            "pattern": "ㄷ+ㅁ",
+            "orthographicFinal": "ㅅ",
+            "audio": "g2_e_005.mp3",
+            "note": "단어 경계"
+          },
+          {
+            "id": "g2_e_006",
+            "written": "낮말",
+            "reading": "난말",
+            "pattern": "ㄷ+ㅁ",
+            "orthographicFinal": "ㅈ",
+            "audio": "g2_e_006.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_e_007",
+            "written": "몇 마리",
+            "reading": "면마리",
+            "pattern": "ㄷ+ㅁ",
+            "orthographicFinal": "ㅊ",
+            "audio": "g2_e_007.mp3",
+            "note": "단어 경계"
+          },
+          {
+            "id": "g2_e_008",
+            "written": "옛날",
+            "reading": "옌날",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅅ",
+            "audio": "g2_e_008.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_e_009",
+            "written": "듣는",
+            "reading": "든는",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㄷ",
+            "audio": "g2_e_009.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_e_010",
+            "written": "늦나요",
+            "reading": "는나요",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅈ",
+            "audio": "g2_e_010.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_e_011",
+            "written": "끝나요",
+            "reading": "끈나요",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅌ",
+            "audio": "g2_e_011.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_e_012",
+            "written": "있는",
+            "reading": "인는",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅆ",
+            "audio": "g2_e_012.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_e_013",
+            "written": "몇 명",
+            "reading": "면명",
+            "pattern": "ㄷ+ㅁ",
+            "orthographicFinal": "ㅊ",
+            "audio": "g2_e_013.mp3",
+            "note": "단어 경계"
+          },
+          {
+            "id": "g2_e_014",
+            "written": "콧물",
+            "reading": "콘물",
+            "pattern": "ㄷ+ㅁ",
+            "orthographicFinal": "ㅅ",
+            "audio": "g2_e_014.mp3",
+            "note": "사이시옷"
+          },
+          {
+            "id": "g2_e_015",
+            "written": "묻는",
+            "reading": "문는",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㄷ",
+            "audio": "g2_e_015.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_e_016",
+            "written": "맞나요?",
+            "reading": "만나요?",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅈ",
+            "audio": "g2_e_016.mp3",
+            "note": ""
+          }
+        ],
+        "normal": [
+          {
+            "id": "g2_n_001",
+            "written": "뱃나무",
+            "reading": "밴나무",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅅ",
+            "audio": "g2_n_001.mp3",
+            "note": "사이시옷"
+          },
+          {
+            "id": "g2_n_002",
+            "written": "꽃놀이",
+            "reading": "꼰노리",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅊ",
+            "audio": "g2_n_002.mp3",
+            "note": "복합어"
+          },
+          {
+            "id": "g2_n_003",
+            "written": "넣는다",
+            "reading": "넌는다",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅎ",
+            "audio": "g2_n_003.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_n_004",
+            "written": "팥만",
+            "reading": "판만",
+            "pattern": "ㄷ+ㅁ",
+            "orthographicFinal": "ㅌ",
+            "audio": "g2_n_004.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_n_005",
+            "written": "히읗만",
+            "reading": "히은만",
+            "pattern": "ㄷ+ㅁ",
+            "orthographicFinal": "ㅎ",
+            "audio": "g2_n_005.mp3",
+            "note": "자모 이름"
+          },
+          {
+            "id": "g2_n_006",
+            "written": "못 놀다",
+            "reading": "몬 놀다",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅅ",
+            "audio": "g2_n_006.mp3",
+            "note": "단어 경계"
+          },
+          {
+            "id": "g2_n_007",
+            "written": "좋네",
+            "reading": "존네",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅎ",
+            "audio": "g2_n_007.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_n_008",
+            "written": "쫓느라고",
+            "reading": "쫀느라고",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅊ",
+            "audio": "g2_n_008.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_n_009",
+            "written": "존댓말",
+            "reading": "존댄말",
+            "pattern": "ㄷ+ㅁ",
+            "orthographicFinal": "ㅅ",
+            "audio": "g2_n_009.mp3",
+            "note": "사이시옷"
+          },
+          {
+            "id": "g2_n_010",
+            "written": "뒷문",
+            "reading": "뒨문",
+            "pattern": "ㄷ+ㅁ",
+            "orthographicFinal": "ㅅ",
+            "audio": "g2_n_010.mp3",
+            "note": "사이시옷"
+          },
+          {
+            "id": "g2_n_011",
+            "written": "거짓말",
+            "reading": "거진말",
+            "pattern": "ㄷ+ㅁ",
+            "orthographicFinal": "ㅅ",
+            "audio": "g2_n_011.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_n_012",
+            "written": "쫓나요",
+            "reading": "쫀나요",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅊ",
+            "audio": "g2_n_012.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_n_013",
+            "written": "옷네",
+            "reading": "온네",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅅ",
+            "audio": "g2_n_013.mp3",
+            "note": ""
+          },
+          {
+            "id": "g2_n_014",
+            "written": "윷놀이",
+            "reading": "윤노리",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅊ",
+            "audio": "g2_n_014.mp3",
+            "note": "복합어"
+          },
+          {
+            "id": "g2_n_015",
+            "written": "봤는데",
+            "reading": "반는데",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅆ",
+            "audio": "g2_n_015.mp3",
+            "note": "활용형"
+          },
+          {
+            "id": "g2_n_016",
+            "written": "재미있네요",
+            "reading": "재미인네요",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅆ",
+            "audio": "g2_n_016.mp3",
+            "note": "활용형"
+          },
+          {
+            "id": "g2_n_017",
+            "written": "꽃 냄새",
+            "reading": "꼰냄새",
+            "pattern": "ㄷ+ㄴ",
+            "orthographicFinal": "ㅊ",
+            "audio": "g2_n_017.mp3",
+            "note": "단어 경계"
+          },
+          {
+            "id": "g2_n_018",
+            "written": "못 먹어요",
+            "reading": "몬머거요",
+            "pattern": "ㄷ+ㅁ",
+            "orthographicFinal": "ㅅ",
+            "audio": "g2_n_018.mp3",
+            "note": "단어 경계 + 연음"
+          }
+        ],
+        "hard": [
+          {
+            "id": "g2_h_001",
+            "written": "몇 리",
+            "reading": "면니",
+            "pattern": "ㄷ+ㄹ",
+            "orthographicFinal": "ㅊ",
+            "audio": "g2_h_001.mp3",
+            "note": "희귀 결합. SOUND LAB용"
+          }
+        ]
+      },
+      "sentenceChallenges": [
+        {
+          "id": "s02",
+          "text": "국물이 끝내줘요.",
+          "audio": "s02.mp3",
+          "targets": [
+            {
+              "written": "끝내줘요",
+              "reading": "끈내줘요",
+              "pattern": "ㄷ+ㄴ"
+            }
+          ]
+        },
+        {
+          "id": "s04",
+          "text": "윷놀이를 처음 해 봤는데 재미있네요.",
+          "audio": "s04.mp3",
+          "targets": [
+            {
+              "written": "윷놀이",
+              "reading": "윤노리",
+              "pattern": "ㄷ+ㄴ"
+            },
+            {
+              "written": "봤는데",
+              "reading": "반는데",
+              "pattern": "ㄷ+ㄴ"
+            },
+            {
+              "written": "재미있네요",
+              "reading": "재미인네요",
+              "pattern": "ㄷ+ㄴ"
+            }
+          ]
+        },
+        {
+          "id": "s05",
+          "text": "십만 원을 봉투에 넣는다.",
+          "audio": "s05.mp3",
+          "targets": [
+            {
+              "written": "넣는다",
+              "reading": "넌는다",
+              "pattern": "ㄷ+ㄴ"
+            }
+          ]
+        },
+        {
+          "id": "s06",
+          "text": "옛날에는 꽃 냄새를 싫어했습니다.",
+          "audio": "s06.mp3",
+          "targets": [
+            {
+              "written": "옛날",
+              "reading": "옌날",
+              "pattern": "ㄷ+ㄴ"
+            },
+            {
+              "written": "꽃 냄새",
+              "reading": "꼰냄새",
+              "pattern": "ㄷ+ㄴ"
+            }
+          ]
+        },
+        {
+          "id": "s09",
+          "text": "참치 김밥만 못 먹어요.",
+          "audio": "s09.mp3",
+          "targets": [
+            {
+              "written": "못 먹어요",
+              "reading": "몬머거요",
+              "pattern": "ㄷ+ㅁ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "ㄱ SOUND BATTLE",
+      "patterns": [
+        "ㄱ+ㄴ",
+        "ㄱ+ㅁ",
+        "ㄱ+ㄹ"
+      ],
+      "ruleOutput": {
+        "ㄱ+ㄴ": "ㅇ+ㄴ",
+        "ㄱ+ㅁ": "ㅇ+ㅁ",
+        "ㄱ+ㄹ": "ㅇ+ㄴ"
+      },
+      "levels": {
+        "easy": [
+          {
+            "id": "g3_e_001",
+            "written": "작년",
+            "reading": "장년",
+            "pattern": "ㄱ+ㄴ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_e_001.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_e_002",
+            "written": "묵는다",
+            "reading": "뭉는다",
+            "pattern": "ㄱ+ㄴ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_e_002.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_e_003",
+            "written": "박물관",
+            "reading": "방물관",
+            "pattern": "ㄱ+ㅁ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_e_003.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_e_004",
+            "written": "먹는",
+            "reading": "멍는",
+            "pattern": "ㄱ+ㄴ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_e_004.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_e_005",
+            "written": "막내",
+            "reading": "망내",
+            "pattern": "ㄱ+ㄴ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_e_005.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_e_006",
+            "written": "2학년",
+            "reading": "이항년",
+            "pattern": "ㄱ+ㄴ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_e_006.mp3",
+            "note": "수 표현"
+          },
+          {
+            "id": "g3_e_007",
+            "written": "한국말",
+            "reading": "한궁말",
+            "pattern": "ㄱ+ㅁ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_e_007.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_e_008",
+            "written": "목마르다",
+            "reading": "몽마르다",
+            "pattern": "ㄱ+ㅁ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_e_008.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_e_009",
+            "written": "악마",
+            "reading": "앙마",
+            "pattern": "ㄱ+ㅁ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_e_009.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_e_010",
+            "written": "국물",
+            "reading": "궁물",
+            "pattern": "ㄱ+ㅁ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_e_010.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_e_011",
+            "written": "국내",
+            "reading": "궁내",
+            "pattern": "ㄱ+ㄴ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_e_011.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_e_012",
+            "written": "적는다",
+            "reading": "정는다",
+            "pattern": "ㄱ+ㄴ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_e_012.mp3",
+            "note": ""
+          }
+        ],
+        "normal": [
+          {
+            "id": "g3_n_001",
+            "written": "읽네요",
+            "reading": "잉네요",
+            "pattern": "ㄱ+ㄴ",
+            "orthographicFinal": "ㄺ",
+            "audio": "g3_n_001.mp3",
+            "note": "겹받침"
+          },
+          {
+            "id": "g3_n_002",
+            "written": "부엌문",
+            "reading": "부엉문",
+            "pattern": "ㄱ+ㅁ",
+            "orthographicFinal": "ㅋ",
+            "audio": "g3_n_002.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_n_003",
+            "written": "흙먼지",
+            "reading": "흥먼지",
+            "pattern": "ㄱ+ㅁ",
+            "orthographicFinal": "ㄺ",
+            "audio": "g3_n_003.mp3",
+            "note": "겹받침"
+          },
+          {
+            "id": "g3_n_004",
+            "written": "한국 노래",
+            "reading": "한궁 노래",
+            "pattern": "ㄱ+ㄴ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_n_004.mp3",
+            "note": "단어 경계"
+          },
+          {
+            "id": "g3_n_005",
+            "written": "섞는다",
+            "reading": "성는다",
+            "pattern": "ㄱ+ㄴ",
+            "orthographicFinal": "ㄲ",
+            "audio": "g3_n_005.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_n_006",
+            "written": "흙냄새",
+            "reading": "흥냄새",
+            "pattern": "ㄱ+ㄴ",
+            "orthographicFinal": "ㄺ",
+            "audio": "g3_n_006.mp3",
+            "note": "겹받침"
+          },
+          {
+            "id": "g3_n_007",
+            "written": "밝네요",
+            "reading": "방네요",
+            "pattern": "ㄱ+ㄴ",
+            "orthographicFinal": "ㄺ",
+            "audio": "g3_n_007.mp3",
+            "note": "겹받침"
+          },
+          {
+            "id": "g3_n_008",
+            "written": "태국 무늬",
+            "reading": "태궁 무늬",
+            "pattern": "ㄱ+ㅁ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_n_008.mp3",
+            "note": "단어 경계"
+          },
+          {
+            "id": "g3_n_009",
+            "written": "숙면",
+            "reading": "숭면",
+            "pattern": "ㄱ+ㅁ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_n_009.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_n_010",
+            "written": "핵무기",
+            "reading": "행무기",
+            "pattern": "ㄱ+ㅁ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_n_010.mp3",
+            "note": ""
+          },
+          {
+            "id": "g3_n_011",
+            "written": "식물원",
+            "reading": "싱무뤈",
+            "pattern": "ㄱ+ㅁ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_n_011.mp3",
+            "note": "뒤에서 연음도 함께 나타남"
+          },
+          {
+            "id": "g3_n_012",
+            "written": "중국말",
+            "reading": "중궁말",
+            "pattern": "ㄱ+ㅁ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_n_012.mp3",
+            "note": ""
+          }
+        ],
+        "hard": [
+          {
+            "id": "g3_h_001",
+            "written": "막론",
+            "reading": "망논",
+            "pattern": "ㄱ+ㄹ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_h_001.mp3",
+            "note": "상호 비음 동화"
+          },
+          {
+            "id": "g3_h_002",
+            "written": "백리",
+            "reading": "뱅니",
+            "pattern": "ㄱ+ㄹ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_h_002.mp3",
+            "note": "상호 비음 동화"
+          },
+          {
+            "id": "g3_h_003",
+            "written": "백로",
+            "reading": "뱅노",
+            "pattern": "ㄱ+ㄹ",
+            "orthographicFinal": "ㄱ",
+            "audio": "g3_h_003.mp3",
+            "note": "상호 비음 동화"
+          }
+        ]
+      },
+      "sentenceChallenges": [
+        {
+          "id": "s01",
+          "text": "10년 동안 한국말을 공부했어요.",
+          "audio": "s01.mp3",
+          "targets": [
+            {
+              "written": "한국말",
+              "reading": "한궁말",
+              "pattern": "ㄱ+ㅁ"
+            }
+          ]
+        },
+        {
+          "id": "s02",
+          "text": "국물이 끝내줘요.",
+          "audio": "s02.mp3",
+          "targets": [
+            {
+              "written": "국물",
+              "reading": "궁물",
+              "pattern": "ㄱ+ㅁ"
+            }
+          ]
+        },
+        {
+          "id": "s10",
+          "text": "중국말을 공부하는 2학년 학생입니다.",
+          "audio": "s10.mp3",
+          "targets": [
+            {
+              "written": "중국말",
+              "reading": "중궁말",
+              "pattern": "ㄱ+ㅁ"
+            },
+            {
+              "written": "2학년",
+              "reading": "이항년",
+              "pattern": "ㄱ+ㄴ"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "boss": {
+    "id": "boss_weekend_episode",
+    "title": "주말 이야기",
+    "text": "저는 미국에서 온 저스틴이라고 합니다. 작년에 한국에 왔는데 지금 한국말을 공부하고 있습니다. 저는 시간이 날 때 박물관에서 옛날 물건들을 구경하는 것을 좋아합니다. 미술관에 가는 것도 좋아합니다. 지난주 토요일에 아르바이트가 끝나고 친구 다섯 명과 시립 미술관에 갔습니다. 재미있는 하루였습니다.",
+    "audio": "boss_weekend_episode.mp3",
+    "targets": [
+      {
+        "game": 1,
+        "pattern": "ㅂ+ㄴ",
+        "written": "합니다",
+        "reading": "함니다"
+      },
+      {
+        "game": 3,
+        "pattern": "ㄱ+ㄴ",
+        "written": "작년",
+        "reading": "장년"
+      },
+      {
+        "game": 2,
+        "pattern": "ㄷ+ㄴ",
+        "written": "왔는데",
+        "reading": "완는데"
+      },
+      {
+        "game": 3,
+        "pattern": "ㄱ+ㅁ",
+        "written": "한국말",
+        "reading": "한궁말"
+      },
+      {
+        "game": 3,
+        "pattern": "ㄱ+ㅁ",
+        "written": "박물관",
+        "reading": "방물관"
+      },
+      {
+        "game": 2,
+        "pattern": "ㄷ+ㄴ",
+        "written": "옛날",
+        "reading": "옌날"
+      },
+      {
+        "game": 1,
+        "pattern": "ㅂ+ㄴ",
+        "written": "좋아합니다",
+        "reading": "조아함니다"
+      },
+      {
+        "game": 2,
+        "pattern": "ㄷ+ㄴ",
+        "written": "끝나고",
+        "reading": "끈나고"
+      },
+      {
+        "game": 2,
+        "pattern": "ㄷ+ㅁ",
+        "written": "다섯 명과",
+        "reading": "다선명과"
+      }
+    ]
+  }
+}
