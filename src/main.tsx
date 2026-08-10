@@ -58,7 +58,74 @@ function AudioProvider({children}:{children:React.ReactNode}){
   useEffect(()=>{const audio=music.current;if(!audio)return;if(muted){audio.pause()}else{audio.volume=Math.max(audio.volume,.42);audio.play().catch(()=>{})}},[muted]);
   useEffect(()=>{const resume=()=>{const audio=music.current;if(!mutedRef.current&&audio?.paused){audio.volume=Math.max(audio.volume,.42);audio.play().catch(()=>{})}};addEventListener('pointerdown',resume);addEventListener('keydown',resume);return()=>{removeEventListener('pointerdown',resume);removeEventListener('keydown',resume);if(fadeTimer.current)clearInterval(fadeTimer.current);music.current?.pause()}},[]);
   const playSfx=useCallback((n:string)=>{if(!muted){const a=new Audio(`${import.meta.env.BASE_URL}sfx/${n}.mp3`);a.volume=.7;a.play().catch(()=>{})}},[muted]);
-  const speak=useCallback((text:string)=>{if(mutedRef.current)return;const bg=music.current;const token=transition.current;const restore=()=>{if(bg&&activeFile.current)fadeTo(bg,.42,musicConfig.ducking.releaseMs,token)};if(bg)fadeTo(bg,.167,musicConfig.ducking.attackMs,token);try{if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window)){restore();return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='ko-KR';u.onend=restore;u.onerror=restore;speechSynthesis.speak(u)}catch{restore()}},[fadeTo]);
+  const speak=useCallback((text:string)=>{
+  if(mutedRef.current)return;
+
+  const bg=music.current;
+  const token=transition.current;
+
+  const restore=()=>{
+    if(bg&&activeFile.current){
+      fadeTo(bg,.42,musicConfig.ducking.releaseMs,token);
+    }
+  };
+
+  if(bg){
+    fadeTo(bg,.167,musicConfig.ducking.attackMs,token);
+  }
+
+  try{
+    if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window)){
+      restore();
+      return;
+    }
+
+    const synth=window.speechSynthesis;
+    synth.cancel();
+
+    const speakKorean=()=>{
+      const voices=synth.getVoices();
+
+      const koreanVoice=
+        voices.find(v=>v.lang.toLowerCase()==='ko-kr') ||
+        voices.find(v=>v.lang.toLowerCase().startsWith('ko'));
+
+      const u=new SpeechSynthesisUtterance(text);
+
+      u.lang='ko-KR';
+      u.rate=0.9;
+      u.pitch=1;
+
+      if(koreanVoice){
+        u.voice=koreanVoice;
+      }
+
+      u.onend=restore;
+      u.onerror=restore;
+
+      synth.speak(u);
+    };
+
+    if(synth.getVoices().length){
+      speakKorean();
+    }else{
+      let spoken=false;
+
+      const start=()=>{
+        if(spoken)return;
+        spoken=true;
+        synth.removeEventListener('voiceschanged',start);
+        speakKorean();
+      };
+
+      synth.addEventListener('voiceschanged',start);
+      setTimeout(start,300);
+    }
+
+  }catch{
+    restore();
+  }
+},[fadeTo]);
   const bossMode=useCallback((on:boolean)=>{switchTrack(on?'boss':musicForPath(pathRef.current))},[switchTrack]);
   return <AudioContext.Provider value={{muted,toggle,playSfx,speak,bossMode}}>{children}</AudioContext.Provider>
 }
